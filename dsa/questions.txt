@@ -1,0 +1,1 @@
+1.write a program to find sum and average of all elements of the array using malloc()
