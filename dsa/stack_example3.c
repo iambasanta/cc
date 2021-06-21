@@ -40,7 +40,7 @@ int main()
 
 void push(int item)
 {
-    struct node *nptr = malloc(sizeof(struct node));
+    struct node *nptr =(node *) malloc(sizeof(struct node));
     nptr->data = item;
     nptr->next = top;
     top = nptr;
