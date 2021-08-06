@@ -9,7 +9,7 @@ int main(){
     cin>>a;
     cout<<"Ceilling of "<<a<<" is : "<<ceil(a)<<endl;
     cout<<"Floor of "<<a<<" is : "<<floor(a)<<endl;
-    cout<<"Do you want to continue ? Press Y/N. ";
+    cout<<"Do you want to continue ? Press Y/N: ";
     cin>>decision;
     }while(decision =='Y' || decision =='y');
     return 0;

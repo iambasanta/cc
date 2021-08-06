@@ -14,14 +14,14 @@ int main(){
     cout<<"Entering elements of A "<<endl;
     for(int i = 0; i<row; i++){
         for(int j = 0; j<col; j++){
-            cout<<"Value of A"<<i+1<<j+1<<" :";
+            cout<<"Value of A["<<i+1<<j+1<<"] :";
             cin>>A[i][j];
         }
     }
     cout<<"Entering elements of B "<<endl;
     for(int i = 0; i<row; i++){
         for(int j = 0; j<col; j++){
-            cout<<"Value of B"<<i+1<<j+1<<" :";
+            cout<<"Value of B["<<i+1<<j+1<<"] :";
             cin>>B[i][j];
         }
     }
