@@ -1,1 +1,0 @@
-rollno :1, name:sunil, age:22, rollno :2, name:basanta, age:33, 
