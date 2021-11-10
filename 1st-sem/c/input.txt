@@ -1,0 +1,2 @@
+basanta 2 100000 
+manjeet 3 500000 
