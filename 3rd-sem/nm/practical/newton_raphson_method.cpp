@@ -19,7 +19,7 @@ int main(){
     int n =1;
 
     do{
-        cout<<"Enter two valid  point :";
+        cout<<"Enter a valid  point :";
         cin>>a;
     }while(df(a) == 0);
 
