@@ -8,7 +8,7 @@ int main(){
     float a,h,fd1,fd2;
     char q;
     do{
-        printf("Enter the poijnt at which derivatives are required :");
+        printf("Enter the point at which derivatives are required :");
         scanf("%f",&a);
         printf("\nEnter the value of h :");
         scanf("%f",&h);
