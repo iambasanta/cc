@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
- 
+
 
 struct node
 {
@@ -9,17 +9,17 @@ struct node
     struct node *next;
 };
 
- 
+
 
 struct node *rear=NULL,*font=NULL; 
 
- 
+
 
 void display();
 void enqueue(int);
 void dequeue();
 
- 
+
 
 int main()
 {
@@ -46,33 +46,33 @@ int main()
     }while (ch != 0);
 }
 
- 
+
 
 void enqueue(int item)
 {
     struct node *nptr =(node*) malloc(sizeof(struct node));
     nptr->data = item;
-    
- if ((font==NULL)&&(rear==NULL))
-  {
-      font=nptr;
 
- 
+    if ((font==NULL)&&(rear==NULL))
+    {
+        font=nptr;
 
-    rear=nptr;
-    nptr->next=NULL;
-  
-  }
-else
-{
-rear->next = nptr;
-nptr->next=NULL;
-rear = nptr;
 
+
+        rear=nptr;
+        nptr->next=NULL;
+
+    }
+    else
+    {
+        rear->next = nptr;
+        nptr->next=NULL;
+        rear = nptr;
+
+    }
 }
-}
 
- 
+
 
 void display()
 {
@@ -85,7 +85,7 @@ void display()
     }
 }
 
- 
+
 
 void dequeue()
 {
