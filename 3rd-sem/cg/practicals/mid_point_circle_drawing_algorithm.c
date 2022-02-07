@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<graphics.h>
 
-Void MPCA (int xc, int yc, int r) {
+void MPCA (int xc, int yc, int r) {
     int p,x,y;
     p=1-r;
     x=0;
     y=r;
-    While(x<=y) {
+    while(x<=y) {
         putpixel(xc+x,yc+y,5);
         putpixel(xc-y,yc-x,5);
         putpixel(xc+y,yc-x,5);
@@ -24,13 +24,13 @@ Void MPCA (int xc, int yc, int r) {
     } 
 }
 
-Void main() {
+void main() {
     int gd=DETECT,gm;
     int xc,yc,r;
-    initgraph (&gd,&gm,"C:\\TURBOC3\\BGI");
+    initgraph (&gd,&gm,NULL);
     printf ("Enter the center and radius of the Circle \n");
     scanf ("%d%d%d",&xc,&yc,&r);
     MPCA (xc,yc,r);
-    Outtextxy (300, 250,"Mid-Point Circle Drawing Algorithm");
+    outtextxy (300, 250,"Mid-Point Circle Drawing Algorithm");
     getch();
 }
