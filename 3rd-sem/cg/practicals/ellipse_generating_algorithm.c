@@ -47,7 +47,7 @@ void main() {
         }
     } while(y!=0);
 
-    outtextxy(300,250, “Ellipse Generation Algorithm”);
+    outtextxy (300,250,"Ellipse Generation Algorithm");
     getch();
     closegraph();
     restorecrtmode();

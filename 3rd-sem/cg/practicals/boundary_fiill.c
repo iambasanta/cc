@@ -1,6 +1,6 @@
 #include<stdio.h> 
 #include<graphics.h>
-#include<dos.h> 
+
 void boundaryfill(int x,int y,int fill_color,int boundary_color){ 
     if(getpixel(x,y)!=boundary_color && getpixel(x,y)!=fill_color){ delay(20);
 
@@ -21,7 +21,8 @@ int main() {
     scanf("%d",&r);
     circle(x,y,r);
     boundaryfill(x,y,4,15);
-    outtextxy(200,150, “Boundary Fill”) getch();
+    outtextxy(200,150, "Boundary Fill");
+    getch();
     closegraph();
     return 0;
 } 
