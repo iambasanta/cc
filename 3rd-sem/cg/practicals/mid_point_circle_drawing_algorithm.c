@@ -17,9 +17,12 @@ void MPCA (int xc, int yc, int r) {
         putpixel(xc-x,yc+y,5); 
         delay (200);
         if (p>0) {
-            p=p+2*(x+1)-2*(y+1)+1; x++; y--; 
+            p=p+2*(x+1)-2*(y+1)+1;
+            x++;
+            y--; 
         } else { 
-            p=p+2*(x+1)+1; x++; 
+            p=p+2*(x+1)+1;
+            x++; 
         } 
     } 
 }

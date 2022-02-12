@@ -33,6 +33,7 @@ void main() {
                 ny2=y2+yt;
                 nx3=x3+xt;
                 ny3=y3+yt;
+
                 line(nx1,ny1,nx2,ny2);
                 line(nx2,ny2,nx3,ny3);
                 line(nx3,ny3,nx1,ny1);
@@ -47,6 +48,7 @@ void main() {
                 ny2=abs(x2*sin(t)+y2*cos(t));
                 nx3=abs(x3*cos(t)-y3*sin(t));
                 ny3=abs(x3*sin(t)+y3*cos(t));
+
                 line(nx1,ny1,nx2,ny2);
                 line(nx2,ny2,nx3,ny3);
                 line(nx3,ny3,nx1,ny1);
@@ -56,11 +58,10 @@ void main() {
                 nx1=x1*sx;
                 ny1=y2*sy;
                 nx2=x2*sx;
-
                 ny2=y2*sy;
                 nx3=x3*sx;
-
                 ny3=y3*sy;
+
                 line(nx1,ny1,nx2,ny2);
                 line(nx2,ny2,nx3,ny3);
                 line(nx3,ny3,nx1,ny1);
