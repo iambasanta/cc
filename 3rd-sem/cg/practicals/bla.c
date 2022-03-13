@@ -23,7 +23,7 @@ void drawline(int x0, int y0, int x1, int y1){
     }  
 
 int main(){  
-    int gd=DETECT, gm, error, x0, y0, x1, y1;  
+    int gd=DETECT, gm, x0, y0, x1, y1;  
     initgraph(&gd, &gm, NULL);  
     printf("Enter co-ordinates of first point: ");  
     scanf("%d%d", &x0, &y0);  

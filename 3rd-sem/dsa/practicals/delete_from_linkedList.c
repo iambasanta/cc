@@ -9,10 +9,10 @@ struct node
 
 
 struct node *head=NULL; 
- 
+
 void display();
 void insert(int);
-void deletefirstelement();
+void delete_first_element();
 void delete_last_element();
 void delete_specified_element();
 void delete_specified_node();
@@ -32,12 +32,12 @@ int main()
                 scanf("%d", &n);
                 insert(n);
                 break;
-            
+
             case 2:
                 display();
                 break;
             case 3:
-                deletefirstelement();
+                delete_first_element();
                 break;
             case 4:
                 delete_last_element();
@@ -52,18 +52,18 @@ int main()
     }while (ch != 0);
 }
 
- 
+
 
 void insert(int item)
 {
     struct node *temp;
     struct node *nptr = (node *) malloc(sizeof(struct node));
     nptr->data = item;
-    
- if (head==NULL){
-    nptr->next=NULL;
-    head=nptr;
-  }
+
+    if (head==NULL){
+        nptr->next=NULL;
+        head=nptr;
+    }
     else
     {
         temp=head;
@@ -79,13 +79,13 @@ void insert(int item)
 
 void display(){
     struct node *temp;
-    
+
     if(head==NULL)
     {
-        
+
         printf("Link List is empty !");
     }
-    
+
     else
     {
         temp = head;
@@ -98,16 +98,16 @@ void display(){
 }
 
 
-void deletefirstelement(){
-    
+void delete_first_element(){
+
     struct node *temp;
-    
+
     temp=head;
     head=head->next;
-    
+
     printf("Deleted item : %d",temp->data);
     free(temp);
-    
+
 }
 
 void delete_last_element(){
@@ -153,7 +153,7 @@ void delete_specified_element(){
         free(temp);
     }
 }
- 
+
 void delete_specified_node(){
     struct node *temp,*prev;
     int nodeToBeDeleted,count=0;

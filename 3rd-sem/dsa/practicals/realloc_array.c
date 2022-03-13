@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 int  main(){
     int n,s;
@@ -21,7 +20,7 @@ int  main(){
     for(int i = 0; i<n; i++){
         scanf("%d",array+i);
     }
-    
+
     printf("\nArray elements before resizing : \n");
     for(int i = 0; i<n; i++){
         printf("%d, ",*(array+i));
@@ -32,7 +31,7 @@ int  main(){
 
     array = (int*)realloc(array, n * sizeof(int));
 
-     printf("\nEnter new  elements ..\n");
+    printf("\nEnter new  elements ..\n");
     for(int i = s; i<n; i++){
         scanf("%d",(array+i));
     }

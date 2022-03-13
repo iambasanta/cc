@@ -19,7 +19,7 @@ else
    stk.push(30);
    stk.push(40);
    stk.push(50);
-   printf("\nSize of the stack %d: " ,stk.size());
+   printf("\nSize of the stack %ld: " ,stk.size());
    //pop and dispay elements
    while(!stk.empty())
        {
