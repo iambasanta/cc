@@ -1,6 +1,5 @@
-![Student](assets/student.gif)
 
-    This repository contains labwork related materials.
+<p align="center"><img src="assets/student.gif" width="400"></p>
 
-
+    This repository contains labwork related materials
 
