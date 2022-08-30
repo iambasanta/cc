@@ -23,11 +23,11 @@ int main(){
 
         switch(operation){
             case 1: push();
-                    break;
+                break;
             case 2: printf("\n The deleted element is : %d",pop());
-                    break;
+                break;
             case 3: traverse();
-                    break;
+                break;
             default: printf("\nThe entered operation is invalid.");
         }
 
@@ -35,6 +35,7 @@ int main(){
         scanf(" %c",&decision);
 
     }while(decision == 'Y' || decision == 'y');
+
     return 0;
 }
 
@@ -64,14 +65,14 @@ int pop(){
 }
 
 void traverse(){
- int i;
- if(top == -1){
-     printf("\n Stack is empty.");
-     exit(0);
- }else{
-     for(i = top ; i>=0; i--){
-         printf("\nTraversing through stack elements .");
-         printf("\n %d",stack[i]);
-     }
- }
+    int i;
+    if(top == -1){
+        printf("\n Stack is empty.");
+        exit(0);
+    }else{
+        printf("\nTraversing through stack elements .");
+        for(i = top ; i>=0; i--){
+            printf("\n %d",stack[i]);
+        }
+    }
 }

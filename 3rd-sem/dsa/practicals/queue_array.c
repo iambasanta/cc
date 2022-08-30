@@ -9,14 +9,14 @@ int queue[MAXSIZE];
 int rear=-1;
 int font=0;
 
- 
+
 
 int main()
-    {
+{
     int choice;
     char ch;
     do
-        {
+    {
         printf("\n 1.Enter Item");
         printf("\n 2.Delete Item");
         printf("\n 3.TRAVERSE");
@@ -38,18 +38,18 @@ int main()
     while(ch=='Y' || ch=='y');
 }
 
- 
+
 
 
 void enqueue()
-    {
+{
     int item;
     if(rear == MAXSIZE -1)
-        {
+    {
         printf("\n The Queue Is Full");
         exit(0);
     }
-    else{
+else{
         printf("Enter the element to be inserted : ");
         scanf("%d",&item);
         rear = rear + 1;
@@ -59,23 +59,23 @@ void enqueue()
 
 
 int dequeue()
-    {
+{
     int item;
     if(rear== -1)
-        {
+    {
         printf("The Queue is Empty");
         exit(0);
     }
-    else{
+else{
         item = queue[font];
         if(rear==font){
-              rear=-1;
-              font=0;
-          } else {
-              font=font+1;
+            rear=-1;
+            font=0;
+        } else {
+            font=font+1;
         }
     }    
-    
+
     return(item);
 }
 void traverse(){
@@ -84,9 +84,9 @@ void traverse(){
         printf("The Queue is Empty");
         exit(0);
     }
-    else{
+else{
+        printf("Traverse the element :");
         for(i = font;i<=rear;i++){
-            printf("Traverse the element :");
             printf("\n %d",queue[i]);
         }
     }
