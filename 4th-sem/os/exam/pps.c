@@ -16,14 +16,9 @@ int main(){
 
     for(int i=0;i<n;i++){
         scanf("%d%d%d",&a[i].AT,&a[i].BT,&a[i].PT);
-
-        // copying the burst time in
-        // a temp array fot futher use
         temp[i]=a[i].BT;
     }
 
-    // we initialize the burst time
-    // of a process with maximum 
     a[9].PT=10000;
 
     for(t=0;count!=n;t++){
@@ -36,15 +31,11 @@ int main(){
 
         a[short_p].BT=a[short_p].BT-1;
 
-        // if any process is completed
         if(a[short_p].BT==0){
-            // one process is completed
-            // so count increases by 1
             count++;
             a[short_p].WT=t+1-a[short_p].AT-temp[short_p];
             a[short_p].TAT=t+1-a[short_p].AT;
 
-            // total calculation
             total_WT=total_WT+a[short_p].WT;
             total_TAT=total_TAT+a[short_p].TAT;
 
@@ -54,14 +45,13 @@ int main(){
     Avg_WT=total_WT/n;
     Avg_TAT=total_TAT/n;
 
-    // printing of the answer
     printf("ID WT TAT\n");
     for(int i=0;i<n;i++){
         printf("%d %d\t%d\n",i+1,a[i].WT,a[i].TAT);
     }
 
-    printf("Avg waiting time of the process  is %f\n",Avg_WT);
-    printf("Avg turn around time of the process is %f\n",Avg_TAT);
+    printf("Avg waiting time of the process  is %f.\n",Avg_WT);
+    printf("Avg turn around time of the process is %f.\n",Avg_TAT);
 
     return 0;
 }
