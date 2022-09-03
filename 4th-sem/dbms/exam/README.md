@@ -19,7 +19,7 @@
 
 ### B
 
-#### insert recores into database
+#### insert records into `book` table
 
     insert into book values(
         1, "Clean Code", "Robert C. Martin","2022-09-03","James O. Coplien"
@@ -46,3 +46,46 @@
 ## 3
 
     delete from book where Pname="Ashmita";
+
+# SET-B
+
+## 1
+
+### create database named  `students`
+
+    create database students;
+
+### use newly created database
+
+    use students;
+
+### A
+
+#### create table `student`
+
+    create table student(StudentNo INT NOT NULL PRIMARY KEY, StudentName VARCHAR(30),
+    DBMS INT, ECommerce INT, FIT INT, WebProgramming INT);
+
+### B
+
+#### insert recores into `student` table
+
+    insert into student values(1,"Ram",44,52,39,24);
+    insert into student values (2,"Robin",43,55,42,40);
+    insert into student values (3,"Sunil",40,43,42,51);
+    insert into student values (4,"Basanta",41,43,48,50);
+
+### C
+
+#### calculate Total from `Marks` field
+
+    select StudentNo,Studentname,(DBMS+ECommerce+FIT+WebProgramming) as Total
+    from student;
+
+## 2
+
+    alter table student add column PhoneNo varchar(13);
+
+## 3
+
+    update student set StudentName="Shyam" where StudentName="Ram";
