@@ -21,7 +21,7 @@ services:
       - ./nginx:/etc/nginx/conf.d
   db:
     image: mysql:8.0
-    container_name: primeme-db
+    container_name: exercise-db
     volumes:
       - ./storage/mysql:/var/lib/mysql
     restart: always
@@ -31,7 +31,7 @@ services:
       - 3306:3306
   phpmyadmin:
     image: phpmyadmin:latest
-    container_name: primeme-phpmyadmin
+    container_name: exercise-phpmyadmin
     restart: always
     ports:
       - 8080:80
