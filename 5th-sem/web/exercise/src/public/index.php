@@ -5,29 +5,23 @@
     <title>Demo</title>
   </head>
     <style>
-        body{
-            display: grid;
-            place-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: sans-serif;
-        }
     </style>
   <body>
-    <?php 
-        $language = "PHP";
-        $learnt = false;
+    <h1> Recommanded books </h1>
 
-        if($learnt){
-            $message = "Yay, I'm learning PHP.";
-        }else{
-            $message = "Whoss, I'm not learning PHP.";
-        }
-    ?>
+    <?php
+        $books = [
+            "Refactoring UI",
+            "Clean Code",
+            "Think like a Programmer",
+        ];
+     ?>
 
-    <h1>
-    <?php echo $message; ?>!
-    </h1>
+    <ul>
+        <?php foreach($books as $book) : ?>
+        <li> <?= $book ?> </li>
+        <?php endforeach; ?>
+    </ul>
 
   </body>
 </html>
