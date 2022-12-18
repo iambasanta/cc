@@ -11,15 +11,31 @@
 
     <?php
         $books = [
-            "Refactoring UI",
-            "Clean Code",
-            "Think like a Programmer",
+            [
+                "name" => "Refactoring UI",
+                "releaseYear" => "2008",
+                "purchaseUrl" => "https://www.refactoringui.com/",
+            ],
+            [
+                "name" => "Clean Code",
+                "releaseYear" => "2020",
+                "purchaseUrl" => "https://www.amazon.com",
+            ],
+            [
+                "name" => "Eloquent javascript",
+                "releaseYear" => "2018",
+                "purchaseUrl" => "https://www.amazon.com",
+            ],
         ];
      ?>
 
     <ul>
         <?php foreach($books as $book) : ?>
-        <li> <?= $book ?> </li>
+        <li> 
+            <a href="<?= $book["purchaseUrl"] ?>">
+                <?= $book["name"]?> (<?=$book["releaseYear"] ?>)
+            </a>
+         </li>
         <?php endforeach; ?>
     </ul>
 
