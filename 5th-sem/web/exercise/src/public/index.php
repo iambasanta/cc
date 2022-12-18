@@ -37,22 +37,26 @@
             ],
         ];
 
-        function filterByAuthor($books, $author){
-            $filteredBooks = [];
+        // function filter($items, $fn){
+        //     $filteredBooks = [];
+        //
+        //     foreach ($items as $item){
+        //         if($fn($item)){
+        //             $filteredItems[] = $item;
+        //         }
+        //     }
+        //
+        //     return $filteredItems;
+        //
+        // }
 
-            foreach ($books as $book){
-                if($book["author"] === $author){
-                    $filteredBooks[] = $book;
-                }
-            }
-
-            return $filteredBooks;
-
-        }
+        $filteredBooks = array_filter($books, function ($book){
+            return $book["releaseYear"] => 1950 && $book["releaseYear"] <=2020;
+        });
      ?>
 
     <ul>
-        <?php foreach(filterByAuthor($books, "Bob C. Martin") as $book) : ?>
+        <?php foreach($filteredBooks as $book) : ?>
             <li> 
                 <a href="<?= $book["purchaseUrl"] ?>">
                 <?= $book["name"]?> (<?=$book["releaseYear"] ?>) - By <?= $book["author"] ?>
