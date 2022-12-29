@@ -7,12 +7,13 @@
 </head>
 
 <table>
-    <thead>
+    <thead >
         <th>Sn</th>
         <th>Name</th>
         <th>Email</th>
         <th>Phone</th>
         <th>College</th>
+        <th>Action</th>
     </thead>
     <tbody >
 <?php 
@@ -28,6 +29,7 @@ if(mysqli_num_rows($result)>0){
         echo "<td>".$row["email"]."</td>";
         echo "<td>".$row["phone"]."</td>";
         echo "<td>".$row["college"]."</td>";
+        echo "<td><a href='edit.php?id=".$row['id']."'>Edit</a> || <a href='delete.php?id=".$row['id']."'>Delete</a></td>";
         echo "</tr>";
         $sn++;
     }

@@ -1,4 +1,4 @@
-<form action="" method="">
+<form action="insert.php" method="POST">
     </br>
     Name : 
     <input type="text" name="name" /></br>

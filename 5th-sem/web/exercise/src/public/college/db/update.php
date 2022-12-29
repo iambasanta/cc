@@ -1,4 +1,5 @@
 <?php
+$id= $_GET["id"];
 
 include ("connection.php");
 $name = $_POST["name"];
@@ -6,7 +7,7 @@ $email = $_POST["email"];
 $phone = $_POST["phone"];
 $college = $_POST["college"];
 
-$sql = "INSERT INTO web (name,email,college,phone) VALUES('$name','$email','$college','$phone')";
+$sql = "UPDATE web SET name='$name',email='$email',college='$college',phone='$phone' WHERE id=".$id;
 
 $result = mysqli_query($connect, $sql);
 
