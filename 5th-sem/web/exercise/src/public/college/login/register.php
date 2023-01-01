@@ -11,10 +11,24 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
     if(empty($user_name)){
         $errors["user_name"] = "User name is required.";
+    }else{
+        $query = "SELECT * FROM users WHERE user_name= '$user_name'";
+        $result = mysqli_query($connect, $query);
+
+        if(mysqli_num_rows($result) > 0){
+            $errors["user_name"] = "User name is already taken.";
+        }
     }
 
     if(empty($email)){
         $errors["email"] = "Email is required.";
+    }else{
+        $query = "SELECT * FROM users WHERE email= '$email'";
+        $result = mysqli_query($connect, $query);
+
+        if(mysqli_num_rows($result) > 0){
+            $errors["email"] = "Email is already in use.";
+        }
     }
 
     if(empty($password)){
