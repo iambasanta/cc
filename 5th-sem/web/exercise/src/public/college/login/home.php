@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
-  </head>
-  <body>
-        <h1>Yay! you are logged in.</h1>
-  </body>
-</html>
+<?php
+session_start();
+if(isset($_SESSION["user_name"])){
+    echo "<h1> Yay ! you are logged in. Welcome ".$_SESSION["user_name"]."<br>";
+    echo "<a href='logout.php'>Logout</a>";
+}else{
+    header("location:login-form.php?err=true");
+}
+
+?>

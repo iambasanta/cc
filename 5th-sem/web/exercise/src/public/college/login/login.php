@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "connection.php";
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
@@ -25,6 +26,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         $result = mysqli_query($connect, $query);
 
         if(mysqli_num_rows($result) > 0){
+            $_SESSION["user_name"] = $username_email;
             header("location:home.php");
         }else{
             $errors["failed"] = "Credentials do not match our record.";
@@ -32,26 +34,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
     }
 }
+
+require("login-form.php");
+
 ?>
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-    <?php if(isset($errors["failed"])) :?>
-    <p style="color: red;"><?php echo $errors["failed"]; ?></p>
-    <?php endif; ?>
-    </br>
-    User Name/ Email : 
-    <input type="text" name="username_email" /></br>
-    <?php if(isset($errors["username_email"])) :?>
-    <p style="color: red;"><?php echo $errors["username_email"]; ?></p>
-    <?php endif; ?>
-    </br>
-
-    Password : 
-    <input type="password" name="password" /></br>
-    <?php if(isset($errors["password"])) :?>
-    <p style="color: red;"><?php echo $errors["password"]; ?></p>
-    <?php endif; ?>
-    </br>
-
-    <input type="submit" value="Login"/>
-</form>
