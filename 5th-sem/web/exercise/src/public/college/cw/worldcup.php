@@ -39,7 +39,7 @@ $matches = [
         </tr>
         <?php foreach($matches as $match) : ?>
         <tr>
-            <td style="<?= $match['win_status'] ? "color:green;" : "" ?>"><?= $match['team_name'] ?></td>
+            <td style="<?= $match['win_status'] ? "color:green;" : "color:red;" ?>"><?= $match['team_name'] ?></td>
             <td><?= $match['goals_scored'] ?></td>
             <td><?= $match['goals_conceded'] ?></td>
             <td><?= $match['opponent_team'] ?></td>
