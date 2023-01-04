@@ -1,3 +1,11 @@
+<?php
+if(isset($_GET["lgt"])){
+    echo "You have been logged out!";
+}elseif(isset($_GET["err"])){
+    echo "Invalid username or password";
+}
+?>
+
 <form action="login.php" method="POST">
     <?php if(isset($errors["failed"])) :?>
     <p style="color: red;"><?php echo $errors["failed"]; ?></p>

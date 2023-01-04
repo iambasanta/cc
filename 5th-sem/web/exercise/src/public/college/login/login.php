@@ -29,7 +29,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
             $_SESSION["user_name"] = $username_email;
             header("location:home.php");
         }else{
-            $errors["failed"] = "Credentials do not match our record.";
+            header("location:login-form.php?err=true");
+            // $errors["failed"] = "Credentials do not match our record.";
         }
 
     }
