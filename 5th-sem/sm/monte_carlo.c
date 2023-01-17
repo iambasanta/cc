@@ -3,30 +3,33 @@
 #include <math.h>
 #include <time.h>
 
-int main()
-{
-  int i,itr,m=0,n=0;
-  printf("Enter number of iterations: ");
-  scanf("%d",&itr);
-  double x, y;
-  
-  srand(time(0));
+int main(){
+    int i,itr,m=0,n=0;
+    printf("Enter number of iterations: ");
+    scanf("%d",&itr);
+    double x, y;
 
-  for(i=1; i<=itr; i++){
-      x = (double)rand() / RAND_MAX;
-      y = (double)rand() / RAND_MAX;
+    srand(time(0));
 
-      if(x*x + y*y <=1){
-          m++;
-      }
+    for(i = 1; i <= itr; i++){
+        x = (double)rand() / RAND_MAX;
+        y = (double)rand() / RAND_MAX;
 
-      n++;
-  }
+        if(x*x + y*y <=1){
+            m++;
+        }
 
-  double pi = (double) m/n *4;
+        n++;
+    }
 
-  printf("Approximate value of pi: %f\n", pi);
-  
-  return 0;
+    double pi = (double) m/n *4;
+
+    printf("Approximate value of pi: %f\n", pi);
+
+    printf("\n");
+    printf("BASANTA_23473@SIMULATION_LAB_PRIME");
+    printf("\n");
+
+    return 0;
 }
 
