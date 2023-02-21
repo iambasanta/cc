@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report SYSTEM "report.dtd">
+<Report>
+<Metadata>
+<Author>
+<Name>Madan Kadariya</Name>
+<Email>madan.kadariya@ncit.edu.np</Email>
+<WorkPhone>4356789</WorkPhone>
+</Author>
+<Author>
+<Name>Your name</Name>
+<Email>Your email</Email>
+<HomePhone>your phone</HomePhone>
+</Author>
+<Assignment>
+<Course>Semantic Web</Course>
+<Date>11 June 2021</Date>
+<Title>Title of Assignment</Title>
+<Description>Short description of the assignment.</Description>
+</Assignment>
+</Metadata>
+<!-- This is a comment -->
+<Body>
+<Section title="Section 1 title" id="s1">
+<Para>Paragraph 1 goes here</Para>
+<Para>This is a unicode character reference &#960;. Here are some entity
+ 
+references - &amp;,&apos;,&gt;,&lt;,&quot;</Para>
+ 
+</Section>
+<Section title="Section 2 title" id="s2">
+<Para><![CDATA[ Anything goes in CDATA ..& more here ......<and>
+ 
+here....]]></Para>
+ 
+<Para>Paragraph 2 goes here</Para>
+</Section>
+</Body>
+</Report>
