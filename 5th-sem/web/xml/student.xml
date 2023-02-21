@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./student.xls" ?>
+<class>
+    <student>
+        <firstname>Jim </firstname>
+        <lastname>Gordon</lastname>
+        <nickname>Jimbo</nickname>
+    </student>
+    <student>
+        <firstname>Prime </firstname>
+        <lastname>Schord</lastname>
+        <nickname>primeo</nickname>
+    </student>
+    <student>
+        <firstname>Thomas </firstname>
+        <lastname>Edison</lastname>
+        <nickname>te</nickname>
+    </student>
+</class>
