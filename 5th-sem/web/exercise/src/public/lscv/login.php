@@ -30,7 +30,7 @@
             <span id="passwordError" style="color: red;"></span>
             </br>
             </br>
-            <input id="submitButton" type="button" onclick="validateForm()" value="Login"/>
+            <input id="submitButton" type="submit" onclick="validateForm()" value="Login"/>
         </form>
     </body>
 </html>
