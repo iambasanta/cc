@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD for XML Lab Session -->
+<!ELEMENT Report (Metadata, Body)>
+<!ELEMENT Metadata (Author+, Assignment)>
+<!ELEMENT Author (Name, Email, (HomePhone | WorkPhone)?)>
+<!ELEMENT Assignment (Course, Date, Title, Description?)>
+<!ELEMENT Body (Section)+>
+<!ELEMENT Section (Para)+>
+ 
+<!ATTLIST Author
+affiliation CDATA #FIXED "IOE"
+>
+<!ATTLIST Section
+title CDATA #REQUIRED
+id ID #IMPLIED
+>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT HomePhone (#PCDATA)>
+<!ELEMENT WorkPhone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Course (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Para (#PCDATA)>
+<!ATTLIST Assignment
+AssCode NMTOKEN #IMPLIED
+>

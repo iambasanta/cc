@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report SYSTEM "student_report.dtd">
+<Report>
+  <Students>
+    <Student StudId="S001">
+      <Name>
+        <First>John</First>
+        <Last>Smith</Last>
+      </Name>
+      <Status>Graduate</Status>
+      <CrsTaken CrsCode="C001"/>
+      <CrsTaken CrsCode="C002"/>
+    </Student>
+    <Student StudId="S002">
+      <Name>
+        <First>Jane</First>
+        <Last>Doe</Last>
+      </Name>
+      <Status>Undergraduate</Status>
+      <CrsTaken CrsCode="C001"/>
+      <CrsTaken CrsCode="C003"/>
+    </Student>
+  </Students>
+  <Classes>
+    <Class>
+      <Semester>Fall 2022</Semester>
+      <ClassRoster Members="S001 S002"/>
+    </Class>
+  </Classes>
+  <Courses>
+    <Course CrsCode="C001">Introduction to Programming</Course>
+    <Course CrsCode="C002">Database Management</Course>
+    <Course CrsCode="C003">Web Development</Course>
+  </Courses>
+</Report>

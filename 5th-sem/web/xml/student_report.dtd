@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Report (Students, Classes, Courses)>
+<!ELEMENT Students (Student*)>
+<!ELEMENT Classes (Class*)>
+<!ELEMENT Courses (Course*)>
+<!ELEMENT Student (Name, Status, CrsTaken*)>
+<!ELEMENT Name (First, Last)>
+<!ELEMENT First (#PCDATA)>
+<!ELEMENT Last (#PCDATA)>
+<!ELEMENT Status (#PCDATA)>
+<!ELEMENT CrsTaken (#PCDATA)>
+<!ELEMENT Class (Semester, ClassRoster)>
+<!ELEMENT Semester (#PCDATA)>
+<!ELEMENT ClassRoster (#PCDATA)>
+<!ELEMENT Course (#PCDATA)>
+<!ATTLIST Student StudId ID #REQUIRED>
+<!ATTLIST Course CrsCode ID #REQUIRED>
+<!ATTLIST CrsTaken CrsCode IDREF #REQUIRED>
+<!ATTLIST ClassRoster Members IDREFS #REQUIRED>
