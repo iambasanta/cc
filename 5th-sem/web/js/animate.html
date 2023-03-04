@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="div"
+      style="
+        background: #000000;
+        height: 100px;
+        width: 100px;
+        position: ablsolute;
+      "
+    ></div>
+    <br />
+    <button id="button" type="button">Start Animation</button>
+    <script>
+      $("#button").click(function () {
+        $("#div").animate(
+          {
+            width: "toggle",
+          },
+          "slow",
+          function () {
+            alert("Animation completed.");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
