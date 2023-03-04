@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jquery Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <img id="my-image" src="https://via.placeholder.com/150" />
+    <br />
+    <button id="hide-button">Hide image</button>
+    <button id="show-button">Show image</button>
+    <button id="fade-out-button">Fade out</button>
+    <button id="fade-in-button">Fade in</button>
+    <button id="stop-button">Stop</button>
+    <script>
+      // Hide/show effect
+      $("#hide-button").click(function () {
+        $("#my-image").hide();
+      });
+      $("#show-button").click(function () {
+        $("#my-image").show();
+      });
+
+      // Fade effect
+      $("#fade-out-button").click(function () {
+        $("#my-image").fadeOut();
+      });
+      $("#fade-in-button").click(function () {
+        $("#my-image").fadeIn();
+      });
+
+      // Stop effect
+      $("#stop-button").click(function () {
+        $("#my-image").stop();
+      });
+    </script>
+  </body>
+</html>

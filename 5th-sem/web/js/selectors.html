@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Using selectors</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2 class="convo">Can you change me; Senpai ?</h2>
+    <div class="classSelector">I'm selected by class.</div>
+    <div id="idSelector">I'm selected by id.</div>
+    <p>I was like this before.</p>
+    <p id="changeMe"></p>
+
+    <script>
+      var convo = document.querySelector(".convo");
+      convo.style.backgroundColor = "#000000";
+      convo.style.color = "#FFFFFF";
+
+      var classSelector = document.getElementsByClassName("classSelector");
+      classSelector[0].innerHTML = "HELLO WORLD, i am selected by class .";
+
+      var idSelector = document.getElementById("idSelector");
+      idSelector.style.backgroundColor = "gray";
+
+      var changeMe = document.getElementById("changeMe");
+      changeMe.innerHTML = "Now, I'm changed to this.";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Popups</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <button type="button" onclick="openAlert()">Open Alert</button>
+    <br />
+    <button type="button" onclick="openConfirm()">Open Confirm</button>
+    <br />
+    <button type="button" onclick="openPrompt()">Open Prompt</button>
+    <br />
+    <script>
+      function openAlert() {
+        alert("Oh you called me!");
+      }
+      function openConfirm() {
+        confirm("You sure about that?");
+      }
+      function openPrompt() {
+        prompt("Enter your name");
+      }
+    </script>
+  </body>
+</html>

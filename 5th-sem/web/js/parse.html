@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parsing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <script>
+      //using parseInt and parseFloat
+      var value = "69";
+      var isInt = parseInt(value);
+      var isFloat = parseFloat(value);
+
+      document.write(value + " is " + typeof isInt + "</br>");
+      document.write(value + " is " + typeof isFloat + "</br>");
+
+      //using eval
+      document.write("Calculate 23 * 3 using eval." + "</br>");
+      const x = 23;
+      const y = 3;
+      const z = x * y;
+      document.write("Answer is " + eval(z) + "</br>");
+    </script>
+  </body>
+</html>

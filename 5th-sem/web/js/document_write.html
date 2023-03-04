@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Using document.write()</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <noscript>
+      <h1>I'm no script tag, so i am not visible in the browser.</h1>
+    </noscript>
+    <script>
+      document.write("Prime College" + "</br>");
+
+      // using date function
+      var today = new Date();
+      document.write(today + "</br>");
+
+      // setting date
+      var day7 = new Date();
+      day7.setDate(7);
+      document.write(day7 + "</br>");
+
+      // setting month
+      var december = new Date();
+      december.setMonth(11);
+      document.write(december + "</br>");
+
+      // setting year
+      var nextYear = new Date();
+      nextYear.setFullYear(2024);
+      document.write(nextYear + "</br>");
+
+      // setting hour
+      var maxHour = new Date();
+      maxHour.setHours(12);
+      document.write(maxHour + "</br>");
+    </script>
+  </body>
+</html>

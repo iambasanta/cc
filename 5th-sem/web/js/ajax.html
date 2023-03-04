@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ajax</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <button id="load-button">Load Content</button>
+    <script>
+      $("#load-button").click(function () {
+        $.ajax({
+          url: "https://jsonplaceholder.typicode.com/posts/1",
+          method: "GET",
+          success: function (response) {
+            $("#content").text(response.body);
+          },
+          error: function (xhr, status, error) {
+            console.log("Error:", error);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form validation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+      <p id="nameError" style="color: red"></p>
+      <br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br />
+      <p id="ageError" style="color: red"></p>
+      <br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" /><br />
+      <p id="phoneError" style="color: red"></p>
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <p id="emailError" style="color: red"></p>
+      <br />
+
+      <label for="college">College:</label>
+      <select id="college" name="college">
+        <option value="college1">College 1</option>
+        <option value="college2">College 2</option>
+        <option value="college3">College 3</option></select
+      ><br /><br />
+      <br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <br />
+
+      <input type="checkbox" id="terms" name="terms" />
+      <label for="terms">I accept all terms and conditions</label><br />
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function validateForm() {
+        // Get form input values
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let phone = document.getElementById("phone").value;
+        let email = document.getElementById("email").value;
+
+        // Validate name field
+        if (name.length < 6 || !/^[a-zA-Z ]+$/.test(name)) {
+          document.getElementById("nameError").innerHTML =
+            "Please enter a valid name (at least 6 characters long and containing only letters and spaces).";
+          return false;
+        } else {
+          document.getElementById("nameError").innerHTML = "";
+        }
+
+        // Validate age field
+        if (age < 18 || age > 50 || !Number.isInteger(Number(age))) {
+          document.getElementById("ageError").innerHTML =
+            "Please enter a valid age (between 18 and 50, and an integer).";
+          return false;
+        } else {
+          document.getElementById("ageError").innerHTML = "";
+        }
+
+        // Validate phone number field
+        if (!/^(97|98)\d{8}$/.test(phone)) {
+          document.getElementById("phoneError").innerHTML =
+            "Please enter a valid phone number (10 digits long and starting with 97 or 98).";
+          return false;
+        } else {
+          document.getElementById("phoneError").innerHTML = "";
+        }
+
+        // Validate email field
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          document.getElementById("emailError").innerHTML =
+            "Please enter a valid email address.";
+          return false;
+        } else {
+          document.getElementById("emailError").innerHTML = "";
+        }
+        // All fields are valid
+        return true;
+      }
+    </script>
+  </body>
+</html>

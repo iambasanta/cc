@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jquery Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <button id="click-me">Click me!</button>
+    <br />
+    <br />
+    <input id="hover-me" type="text" value="Hover over me" />
+    <br />
+    <br />
+    <input id="type-here" type="text" placeholder="Type here" />
+    <br />
+    <br />
+    <form id="my-form">
+      <input type="text" name="username" placeholder="Username" />
+      <br />
+      <br />
+      <input type="password" name="password" placeholder="Password" />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      // Click event
+      $("#click-me").click(function () {
+        alert("You clicked the button!");
+      });
+
+      // Mouseout event
+      $("#hover-me").mouseout(function () {
+        $(this).val("Hover over me");
+      });
+
+      // Keyup event
+      $("#type-here").keyup(function () {
+        let val = $(this).val();
+        console.log("You typed: " + val);
+      });
+
+      // Form submit event
+      $("#my-form").submit(function (e) {
+        e.preventDefault();
+        let username = $('input[name="username"]').val();
+        let password = $('input[name="password"]').val();
+        console.log(
+          "Form submitted with username: " +
+            username +
+            " and password: " +
+            password
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script>
+      // 2D array
+      let myArray = [
+        ["John", 25, "male"],
+        ["Mary", 30, "female"],
+        ["Bob", 35, "male"],
+        ["Alice", 40, "female"],
+      ];
+
+      // function to create HTML table from 2D array
+      function createTable(arr) {
+        let table = document.createElement("table");
+        for (let i = 0; i < arr.length; i++) {
+          let row = document.createElement("tr");
+          for (let j = 0; j < arr[i].length; j++) {
+            let cell = document.createElement("td");
+            cell.textContent = arr[i][j];
+            row.appendChild(cell);
+          }
+          table.appendChild(row);
+        }
+        return table;
+      }
+
+      // display 2D array in HTML table
+      let myTable = createTable(myArray);
+      document.body.appendChild(myTable);
+    </script>
+  </body>
+</html>
