@@ -44,9 +44,9 @@ I don't own any of the contents listed below. All credit goes to the original au
 
 - [Fifth Semester](https://github.com/iambasanta/cc/tree/master/5th-sem)
   - [Design and Analysis of Algorithms](https://github.com/iambasanta/cc/tree/master/5th-sem/daa)
-  - [System Analysis and Design]()
+  - [System Analysis and Design](https://github.com/iambasanta/cc/tree/master/5th-sem/sad)
   - [Cryptography](https://github.com/iambasanta/cc/tree/master/5th-sem/cryptography)
   - [Simulation and Modelling](https://github.com/iambasanta/cc/tree/master/5th-sem/sm)
   - [Web Technology](https://github.com/iambasanta/cc/tree/master/5th-sem/web)
-  - [Image Processing]()
+  - [Image Processing](https://github.com/iambasanta/cc/tree/master/5th-sem/ip)
     `elective`
