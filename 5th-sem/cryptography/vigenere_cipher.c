@@ -1,59 +1,83 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
-void encrypt(char *plaintext, char *key) {
-    int i, j;
-    int len = strlen(plaintext);
-    int key_len = strlen(key);
-    char ciphertext[len];
-    for (i = 0, j = 0; i < len; i++, j++) {
-        if (j == key_len) {
-            j = 0;
-        }
-        ciphertext[i] = (plaintext[i] + key[j]) % 26 + 'A';
-    }
-    ciphertext[len] = '\0';
-    printf("Ciphertext: %s\n", ciphertext);
-}
+void encrypt(char message[], char key[]);
+void decrypt(char message[], char key[]);
 
-void decrypt(char *ciphertext, char *key) {
-    int i, j;
-    int len = strlen(ciphertext);
-    int key_len = strlen(key);
-    char plaintext[len];
-    for (i = 0, j = 0; i < len; i++, j++) {
-        if (j == key_len) {
-            j = 0;
-        }
-        plaintext[i] = (ciphertext[i] - key[j] + 26) % 26 + 'A';
-    }
-    plaintext[len] = '\0';
-    printf("Decrypted Text: %s\n", plaintext);
-}
+int main()
+{
+    char message[100], key[100];
+    int choice;
 
-int main() {
-    char plaintext[100],ciphertext[100],key[30];
-    int operation;
-    printf("Enter key: ");
-    scanf("%s", key);
+    printf("Enter the message to encrypt or decrypt (max 100 characters) : ");
+    fgets(message, 100, stdin);
+
+    printf("Enter the key (max 100 characters) : ");
+    fgets(key, 100, stdin);
 
     printf("---OPERATIONS---\n");
-    printf("1. Encryption\n");
-    printf("2. Decryption\n");
-    printf("Choose an operation :: ");
-    scanf("%d", &operation);
+    printf("1. Encrypt\n2. Decrypt\n");
+    printf("Choose operation : ");
+    scanf("%d", &choice);
 
-    if(operation == 1){
-        printf("Enter plaintext: ");
-        scanf("%s", plaintext);
-        encrypt(plaintext, key);
-    }else if (operation == 2) {
-        printf("Enter ciphertext: ");
-        scanf("%s", ciphertext);
-        decrypt(ciphertext, key);
-    }else {
-        printf("Invalid choice.");
+    switch (choice) {
+        case 1:
+            encrypt(message, key);
+            printf("Encrypted message: %s\n", message);
+            break;
+        case 2:
+            decrypt(message, key);
+            printf("Decrypted message: %s\n", message);
+            break;
+        default:
+            printf("Invalid choice!\n");
+            break;
     }
 
     return 0;
+}
+
+void encrypt(char message[], char key[])
+{
+    int i, j, k;
+    char ch;
+
+    for (i = 0, j = 0; message[i] != '\0'; i++) {
+        ch = message[i];
+
+        if (ch >= 'a' && ch <= 'z') {
+            k = key[j] - 'a';
+            ch = 'a' + ((ch - 'a' + k) % 26);
+            j = (j + 1) % strlen(key);
+        } else if (ch >= 'A' && ch <= 'Z') {
+            k = key[j] - 'A';
+            ch = 'A' + ((ch - 'A' + k) % 26);
+            j = (j + 1) % strlen(key);
+        }
+
+        message[i] = ch;
+    }
+}
+
+void decrypt(char message[], char key[])
+{
+    int i, j, k;
+    char ch;
+
+    for (i = 0, j = 0; message[i] != '\0'; i++) {
+        ch = message[i];
+
+        if (ch >= 'a' && ch <= 'z') {
+            k = key[j] - 'a';
+            ch = 'a' + ((ch - 'a' - k + 26) % 26);
+            j = (j + 1) % strlen(key);
+        } else if (ch >= 'A' && ch <= 'Z') {
+            k = key[j] - 'A';
+            ch = 'A' + ((ch - 'A' - k + 26) % 26);
+            j = (j + 1) % strlen(key);
+        }
+
+        message[i] = ch;
+    }
 }
