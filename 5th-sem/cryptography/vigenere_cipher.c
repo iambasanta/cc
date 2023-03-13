@@ -32,15 +32,28 @@ void decrypt(char *ciphertext, char *key) {
 }
 
 int main() {
-    char plaintext[100], key[30];
-
-    printf("Enter plaintext: ");
-    scanf("%s", plaintext);
+    char plaintext[100],ciphertext[100],key[30];
+    int operation;
     printf("Enter key: ");
     scanf("%s", key);
 
-    encrypt(plaintext, key);
-    decrypt(plaintext, key);
+    printf("---OPERATIONS---\n");
+    printf("1. Encryption\n");
+    printf("2. Decryption\n");
+    printf("Choose an operation :: ");
+    scanf("%d", &operation);
+
+    if(operation == 1){
+        printf("Enter plaintext: ");
+        scanf("%s", plaintext);
+        encrypt(plaintext, key);
+    }else if (operation == 2) {
+        printf("Enter ciphertext: ");
+        scanf("%s", ciphertext);
+        decrypt(ciphertext, key);
+    }else {
+        printf("Invalid choice.");
+    }
 
     return 0;
 }
