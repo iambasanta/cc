@@ -14,17 +14,17 @@ I don't own any of the contents listed below. All credit goes to the original au
 
   - [Introduction to Information Technology]()
   - [C Programming](https://github.com/iambasanta/cc/tree/master/1st-sem/c)
-  - [Digital Logic]()
-  - [Mathematics I (Calculus)]()
-  - [Physics]()
+  - [Digital Logics](#)
+  - [Mathematics I (Calculus)](#)
+  - [Physics](#)
 
 - [Second Semester](https://github.com/iambasanta/cc/tree/master/2nd-sem)
 
   - [Discrete Structures](https://github.com/iambasanta/cc/tree/master/2nd-sem/ds)
   - [Object Oriented Programming](https://github.com/iambasanta/cc/tree/master/2nd-sem/cpp)
-  - [Microprocessor]()
-  - [Mathematics II]()
-  - [Statistics I]()
+  - [Microprocessor](#)
+  - [Mathematics II](#)
+  - [Statistics I](#)
 
 - [Third Semester](https://github.com/iambasanta/cc/tree/master/3rd-sem)
 
@@ -32,7 +32,7 @@ I don't own any of the contents listed below. All credit goes to the original au
   - [Numerical Method](https://github.com/iambasanta/cc/tree/master/3rd-sem/nm)
   - [Computer Architecture](https://github.com/iambasanta/cc/tree/master/3rd-sem/ca)
   - [Computer Graphics](https://github.com/iambasanta/cc/tree/master/3rd-sem/cg)
-  - [Statistics II]()
+  - [Statistics II](#)
 
 - [Fourth Semester](https://github.com/iambasanta/cc/tree/master/4th-sem)
 
@@ -43,10 +43,21 @@ I don't own any of the contents listed below. All credit goes to the original au
   - [Artificial Intelligence](https://github.com/iambasanta/cc/tree/master/4th-sem/ai)
 
 - [Fifth Semester](https://github.com/iambasanta/cc/tree/master/5th-sem)
+
   - [Design and Analysis of Algorithms](https://github.com/iambasanta/cc/tree/master/5th-sem/daa)
   - [System Analysis and Design](https://github.com/iambasanta/cc/tree/master/5th-sem/sad)
   - [Cryptography](https://github.com/iambasanta/cc/tree/master/5th-sem/cryptography)
   - [Simulation and Modelling](https://github.com/iambasanta/cc/tree/master/5th-sem/sm)
   - [Web Technology](https://github.com/iambasanta/cc/tree/master/5th-sem/web)
   - [Image Processing](https://github.com/iambasanta/cc/tree/master/5th-sem/ip)
+    `elective`
+
+- [Sixth Semester](https://github.com/iambasanta/cc/tree/master/6th-sem)
+
+  - [Software Engineering](#)
+  - [Compiler Design and Construction](#)
+  - [E-Governance](#)
+  - [NET centric Computing](https://github.com/iambasanta/cc/tree/master/6th-sem/netcentric)
+  - [Technical Writing](#)
+  - [E-commerce](#)
     `elective`
