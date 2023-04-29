@@ -1,1 +1,41 @@
+## Ignore build output
 **/bin/
+**/obj/
+
+# .NET
+## Ignore NuGet Packages
+*.nupkg
+**/packages/
+
+## Ignore the Visual Studio workspace file
+*.sln.DotSettings
+
+## Ignore Visual Studio Code settings
+.vscode/
+
+## Ignore user-specific files
+*.user
+*.suo
+
+## Ignore logs and temporary files
+*.log
+*.tmp
+
+## Ignore environment-specific configuration files
+appsettings.*.json
+*.config
+
+## Ignore IIS Express configuration
+.vs/
+
+## Ignore Rider IDE files
+.idea/
+
+## Ignore TestResults folder
+TestResults/
+
+## Ignore version control system files
+.git/
+.svn/
+.hg/
+
