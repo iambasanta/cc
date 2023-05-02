@@ -1,10 +1,9 @@
-<p align="center"><img src="assets/student.gif" width="400"></p>
-
-    This repository contains CSIT related lab-works
+<h1 align="center">CSIT Lab Works Archive</h1> <br>
+<p align="center"><img src="assets/student.gif" width="400"></p> <br>
 
 ### Notes
 
-I don't own any of the contents listed below. All credit goes to the original authors of the content.
+**Disclaimer**: Please note that the linked notes provided in this repository are not owned or authored by me. These resources are external and belong to their respective owners. I have gathered and shared them here for convenience and educational purposes only. Make sure to respect the original creators and adhere to any usage restrictions or licenses associated with the linked notes.
 
 - [CSIT Handwritten Notes](https://drive.google.com/drive/folders/1Upd81GUyoEky-eg4Do8mf5v6j47jCgk5?usp=sharing)
 
