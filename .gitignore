@@ -39,3 +39,6 @@ TestResults/
 .svn/
 .hg/
 
+*.yy.c
+*.yy.h
+*.out
