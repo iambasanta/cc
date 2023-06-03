@@ -54,7 +54,7 @@
 - [Sixth Semester](https://github.com/iambasanta/cc/tree/master/6th-sem)
 
   - [Software Engineering](#)
-  - [Compiler Design and Construction](#)
+  - [Compiler Design and Construction](https://github.com/iambasanta/cc/tree/master/6th-sem/cdc)
   - [E-Governance](#)
   - [NET centric Computing](https://github.com/iambasanta/cc/tree/master/6th-sem/netcentric)
   - [Technical Writing](#)
