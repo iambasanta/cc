@@ -30,3 +30,22 @@ int main()
 
     return 0;
 }
+
+/*
+EXAMPLE:
+    Enter a string:
+    69
+    DIGIT
+
+    Do you want to continue? (1: Yes, 0: No): 1
+    Enter a string:
+    asf
+    NOT A DIGIT
+
+    Do you want to continue? (1: Yes, 0: No): 1
+    Enter a string:
+    69s
+    NOT A DIGIT
+
+    Do you want to continue? (1: Yes, 0: No): 0
+*/

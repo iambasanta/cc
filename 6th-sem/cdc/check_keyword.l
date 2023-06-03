@@ -15,3 +15,8 @@ int main() {
     return 0;
 }
 
+/* 
+EXAMPLE:
+    Enter an input string:int
+    int is a keyword
+*/

@@ -18,3 +18,14 @@ int main() {
     return 0;
 }
 
+/*
+EXAMPLE
+    Enter an arithmetic expression:
+    3*4*5
+    t1 = 3
+    t1 = t-1 * t0
+    t1 = 4
+    t1 = t-1 * t0
+    t1 = 5
+    ^C
+*/

@@ -14,3 +14,12 @@ int main()
 	yylex();
     return 0;
 }
+
+/*
+EXAMPLE:
+   dfa
+   NOT A DIGIT
+   69
+   DIGIT
+   ^C
+*/

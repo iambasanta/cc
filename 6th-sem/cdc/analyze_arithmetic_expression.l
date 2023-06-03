@@ -20,3 +20,14 @@ int main() {
     yylex();
     return 0;
 }
+
+/*
+EXAMPLE:
+    Enter an input string:
+    int a = 69;
+    Keyword: int
+    Identifier: a
+    Assignment Operator
+    Numeric Literal: 69
+    Semicolon
+*/

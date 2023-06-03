@@ -22,3 +22,10 @@ int main() {
     return 0;
 }
 
+/*
+EXAMPLE:
+    Enter an input string:
+    int a = 5 + 6 * 9 - 5;
+
+    Number of operators: 4
+*/
