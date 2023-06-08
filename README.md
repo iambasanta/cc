@@ -58,5 +58,5 @@
   - [E-Governance](#)
   - [NET centric Computing](https://github.com/iambasanta/cc/tree/master/6th-sem/netcentric)
   - [Technical Writing](#)
-  - [E-commerce](#)
+  - [E-commerce](https://github.com/iambasanta/khemate)
     `elective`
