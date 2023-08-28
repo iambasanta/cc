@@ -3,7 +3,7 @@
 int count_operators(char *expression) {
     int count = 0;
     for (int i = 0; expression[i] != '\0'; i++) {
-        if (expression[i] == '+' || expression[i] == '-' || expression[i] == '*' || expression[i] == '/') {
+        if (expression[i] == '+' || expression[i] == '-' || expression[i] == '*' || expression[i] == '/' || expression[i] == '=') {
             count++;
         }
     }
