@@ -28,9 +28,6 @@ appsettings.*.json
 ## Ignore IIS Express configuration
 .vs/
 
-## Ignore Rider IDE files
-.idea/
-
 ## Ignore TestResults folder
 TestResults/
 
@@ -39,6 +36,19 @@ TestResults/
 .svn/
 .hg/
 
+# Ignore lex
 *.yy.c
 *.yy.h
 *.out
+
+# Java build artifacts
+target/
+bin/
+out/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
