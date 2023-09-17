@@ -4,7 +4,7 @@ import java.util.*;
 // try: used to surround the code that might cause error
 // catch: used to handle error that is caught on try
 // throw: to explicitly throw an error i.e. to throw error from any place
-// finally: to always make the code run
+// finally: whether exception happens of not, anything inside this block will run
 // throws: to handle error that might generate from method
 
 public class DemoExceptionHandling {
@@ -21,9 +21,21 @@ public class DemoExceptionHandling {
              int div = num1 / num2;
              System.out.println("RESULT : " + div);
 
+            // array example
+            int myArr[] = new int[3];
+            myArr[0] = 1;
+            myArr[1] = 2;
+            myArr[2] = 3;
+            myArr[10] = 10;
+
         } catch (ArithmeticException ae) {
             System.out.println("ERROR : DENOMINATOR CAN NOT BE 0. \n" + ae);
-        } finally {
+        } catch (ArrayIndexOutOfBoundsException aiob){
+            System.out.println("ERROR : SIZE OF ARRAY EXCEEDED. \n" + aiob);
+        } catch (Exception e) {
+            System.out.println("ERROR: " + e);
+        }
+        finally {
             System.out.println("FINALLY: always runs.");
         }
         System.out.println("Out of catch block.");
