@@ -60,3 +60,12 @@
   - [Technical Writing](#)
   - [E-commerce](https://github.com/iambasanta/khemate)
     `elective`
+
+- [Seventh Semester](https://github.com/iambasanta/cc/tree/master/7th-sem)
+
+  - [Advanced Java Programming](https://github.com/iambasanta/cc/tree/master/7th-sem/advJava)
+  - [Data Warehousing and Data Mining](#)
+  - [Principles of Management](#)
+  - [Project Work](#)
+  - [Database Administration](#)
+    `elective`
